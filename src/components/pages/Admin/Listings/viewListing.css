@@ -1,0 +1,91 @@
+.property-listing-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .property-listings {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .property-listing-card {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .property-listing-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;  
+    border-radius: 10px;
+  }
+  
+  .property-listing-details {
+    margin-top: 15px;
+  }
+  
+  .property-listing-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .property-listing-description {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 15px;
+    width: 100%;
+  }
+  
+  .update-button, .delete-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .update-button {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .delete-button {
+    background-color: #e74c3c;
+    color: #fff;
+  }
+  
+  .update-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .delete-button:hover {
+    background-color: #c0392b;
+  }
+  .redirect-button{
+    padding: 7px 20px;
+    color: rgb(55, 55, 112);
+    border: 1px solid blue ;
+    border-radius: 99px;
+    display: flex;
+    justify-content: left;
+    margin-left:96px;
+
+  }

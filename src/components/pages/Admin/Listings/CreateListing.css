@@ -1,0 +1,190 @@
+.property-listing-container {  
+    max-width: 700px;
+    margin: -10px auto;
+    padding: 10px;
+
+}
+
+.property-listing-title {
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: -20px;
+    color: #1f1e1e;
+    font-size: 18px;
+
+}
+
+.property-listing-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 45px;
+    font-size: 12px;
+}
+
+.property-listing-input-sections {
+    display: flex; 
+    justify-content: space-between; 
+}
+
+.property-listing-left,
+.property-listing-right {
+    display: flex;
+    flex-direction: column;
+    width: 48%; 
+}
+
+.property-listing-upload-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+.property-listing-upload-group label{
+color: #ffffff;
+background-color: rgb(55, 55, 112);
+border-radius: 3px;
+padding: 8px;
+border: none;
+font-size: 13px;
+margin-top:-15px ;
+
+margin-bottom: 20px;
+}
+
+
+.property-listing-input-group {
+    margin-bottom: 15px;
+    display: flex; 
+    align-items: center; 
+}
+
+.property-listing-label {
+    margin: 0  24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center; 
+}
+
+
+.property-listing-input-small,
+.property-listing-select-small {
+    width: 95%; 
+    height: 28px; 
+    padding: 4px; 
+    border: 1px solid #000000fb;
+    border-radius: 4px;
+    text-align: center;
+    margin: 3px 12px;
+    display: flex;
+}
+
+.property-listing-textarea {
+
+    width: 228px; 
+    height: 100px; 
+
+border: 1px solid rgb(0, 0, 0);
+
+  
+}
+.property-listing-label-amt{
+margin-left: 30px;
+font-weight: 600;
+}
+
+.property-listing-right{
+margin-top:26px ;
+
+}
+.property-listing-left{
+    margin-top:5px ;
+    margin-left: -10px;
+ 
+    
+    }
+
+
+.property-listing-amenities {
+    display: flex; 
+    gap: 12px; 
+  margin-top: 45px;
+
+}
+.property-listing-amenities  input{
+
+  margin:  0 7px;
+}
+
+.property-listing-amenities  label{
+margin-left: 8px;  
+    margin-bottom:  46px;
+  }
+  
+  
+.property-listing-button-group {
+    display: flex;
+    justify-content: center; 
+    margin-top: 4px;
+
+}
+
+.property-listing-button-create,
+.property-listing-button-cancel {
+    padding: 8px 20px; 
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px; 
+    margin: 0 10px;    
+
+}
+.view-listing-link{
+text-decoration: none;
+
+}
+.property-listing-button-create {
+    background-color: rgb(55, 55, 112);
+    color: white;
+    
+   
+}
+
+.property-listing-button-cancel {
+    background-color: rgb(55, 55, 112);
+    color: white;
+}
+
+.flex-row {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+
+.uploaded-image-preview {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    margin-top: 10px;
+}
+
+.uploaded-image-preview img {
+    max-width: 50px; 
+    max-height: 50px; 
+    margin: 5px; 
+}
+.view-listing{
+padding: 7px 20px;
+color: rgb(55, 55, 112);
+border: 1px solid blue ;
+border-radius: 99px;
+display: flex;
+justify-content: left;
+margin: 12px 18px;
+}
+
+.view-listing:hover{
+background-color: #d6d6d6;
+
+}
+

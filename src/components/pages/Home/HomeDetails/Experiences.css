@@ -1,0 +1,72 @@
+.Experiences {
+    text-align: center;
+    margin: 10px; /* Space around the container */
+    height: 100vh;
+
+  }
+  .Discover-heading{
+    display: flex;
+margin: 5px 80px;
+font-size: 25px;
+font-weight: 700;
+
+}
+  .image-container {
+    display: flex; /* Flexbox for horizontal alignment */
+    justify-content: center; /* Center the images */
+  
+ gap: 10px;  
+
+}
+  
+  .image-card {
+    position: relative; /* For positioning the overlay */
+  top: 50px;
+ 
+  }
+  
+  .banner-image {
+    width: 92%; /* Set width for the images */
+    height:70%; /* Set height for the images */
+  
+    border-radius: 8px; /* Rounded corners */
+  
+  }
+  
+  .overlay {
+    position: absolute; /* Position overlay over the image */
+    top: 28%;
+    left: 30%;
+    transform: translate(-50%, -50%); /* Center the overlay */
+    text-align: center; /* Center text in overlay */
+    color: white; /* Text color for contrast */
+
+    
+    border-radius: 8px; /* Rounded corners */
+
+  
+  }
+  
+  .overlay p {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.884); /* Add a shadow for better visibility */
+     
+font-size: 30px;
+font-weight: 600;
+  }
+  
+  .overlay button {
+        padding: 8px 25px; /* Add padding to the button */
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(223, 221, 221, 0.89); /* Button color */
+    color: rgba(0, 0, 0, 0.836); /* Text color for the button */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    font-weight: 600;
+    font-size: 13px;
+    
+  }
+  
+  .overlay button:hover {
+    background-color: gray; /* Change color on hover */
+  }

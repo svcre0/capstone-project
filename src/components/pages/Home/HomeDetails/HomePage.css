@@ -1,0 +1,67 @@
+.home-page {
+    border-bottom: 10px solid black;
+    background-color: black;    
+  }   
+
+  .home-page-container {
+    height: 90vh;
+    display: flex;
+    flex-direction: column; /* Change to column to stack elements */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    position: relative;
+    overflow: hidden;
+    border-top: 15px solid black;
+  }
+  .non-btn{
+color: white;
+background-color: white;
+border: none;
+padding: 5px 40px;
+margin-top: 22px;
+border-bottom: 20px solid black;}
+
+  .home-page-container img {
+    width: 88%; /* Keep the width at 90% */
+    height:100%; /* Full height */
+    object-fit: cover; /* Maintain aspect ratio for better resolution */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    position: absolute; /* Positioning the image behind the text/button */
+   
+  }
+  
+
+  
+  .home-page-container p {
+    color: rgb(255, 254, 254); /* Text color for better visibility */
+    text-align: center;
+    font-size: 18px; /* Adjust font size as needed */
+    margin-top: 480px; /* Remove default margin */
+    z-index: 2; /* Ensure text is above the overlay */
+    font-weight: 600;
+  }
+  
+  .home-page-container button {
+   
+    padding: 14px 22px; /* Add padding to the button */
+    background-color: rgba(252, 236, 236, 0.897); /* Button color */
+    color: white; /* Text color for the button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    z-index: 3; /* Ensure button is above the overlay */
+    color: black;
+    border-radius: 999px;
+    font-weight: 600;
+ 
+  }
+  
+  /* Button hover effect */
+  .home-page-container button:hover {
+    background-color: rgba(184, 93, 113, 0.897); /* Change color on hover */
+    color: white;
+  }
+  

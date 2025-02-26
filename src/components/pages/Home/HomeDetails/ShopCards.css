@@ -1,0 +1,38 @@
+.gift-card {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align to the left */
+    padding: 10px; /* Add some padding */
+ 
+    height: 70vh;
+    margin-bottom: 80px;
+  }
+  
+  .shop-title {
+    margin:170px 120px ; /* Remove default margin */
+  font-size: 30px;
+ 
+  }
+  
+  .learn-more-button {
+    margin:-120px 140px ;
+    background-color: black; /* Set background to black */
+    color: rgba(255, 255, 255, 0.973); /* Change text color to white */
+    padding: 14px 22px; /* Add some padding */
+    border: none; /* Remove default border */
+    cursor: pointer; /* Change cursor to pointer */
+    border-radius: 3px;
+
+  }
+  .learn-more-button:hover {
+    background-color: #ff6b81; /* Change color on hover */
+}
+  .gift-card-image {
+    width: auto; /* Set desired width */
+    height: 560px; /* Maintain aspect ratio */
+    position: absolute; /* Position it relative to the gift-card container */
+    bottom:15 ;
+    right: 120px; /* Adjust as necessary */
+  
+  }
+  

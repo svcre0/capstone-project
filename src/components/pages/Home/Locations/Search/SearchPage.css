@@ -1,0 +1,88 @@
+.searchResults {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  color: #161616;
+  text-decoration: none;  
+
+
+}
+
+.searchResult {
+
+  display: flex;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #e6e6e6;
+  padding: 30px ;
+  position: relative;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); 
+  border-radius: 8px; 
+}
+
+.searchResult__img {
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.searchResult__info {
+  flex: 1;
+}
+
+.searchResult__infoTop {
+  margin-bottom: 15px;
+}
+
+.searchResult__name {
+  font-size: 14px;
+
+  font-weight: 500;
+}
+
+.searchResult__title {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 5px 8px;
+
+}
+
+.searchResult__description {
+  font-size: 12px;
+  color: #717171;
+  line-height: 1.5;
+}
+
+.searchResult__infoBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px; 
+}
+
+.searchResult__stars {
+  display: flex;
+  align-items: center;
+}
+
+.searchResult__rating {
+  font-size: 18px;
+  color: #000000f5;
+  margin:0 5px;
+
+}
+
+.searchResult__price   h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #bd3232fa;
+
+}
+
+.searchResult__price p {
+  color: #b64747;
+  font-size: 14px;
+  margin-top: 5px;
+  font-weight: 500;
+}

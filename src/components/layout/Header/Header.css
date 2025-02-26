@@ -1,0 +1,372 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: black;
+    padding: 25px;
+    border-bottom: 15px solid black;
+}
+
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 30px;
+    color: #b4b4b4;
+}
+
+.account-icon{
+    text-decoration: none;
+    color: rgb(71, 71, 71);
+
+}
+.host-link{
+text-decoration: none;
+color: white;
+
+}
+
+.dropdown-menu {
+    position: absolute;
+    right: 7px;
+    top: 13%;
+    background-color: rgba(255, 255, 255, 0.966);
+    box-shadow: 0 8px 16px rgba(94, 94, 94, 0.342);
+    border-radius: 4px;
+    width: 150px;
+    font-size:12px;
+
+    z-index: 1000;
+  }
+  
+  .dropdown-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .dropdown-menu li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .dropdown-menu li:last-child {
+    border-bottom: none;
+  }
+  
+  .dropdown-menu a {
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+    display: block;
+    padding: 8px 0;
+    
+  }
+  
+  .dropdown-menu li:hover {
+    background-color: #f1f1f1;
+  }
+  
+.header-links {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    font-size: 12px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+
+.header-links.host-link{
+
+    font-size: 14px;
+    color: white;  
+}
+
+
+.header-links .language-icon {
+    font-size: 25px;
+}
+
+.profile-menu-icons {
+    display: flex;
+    background-color: #fff;
+    border-radius: 50px;
+ 
+    color: #6a6a6a;
+    width: 82px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.profile-menu-icons:hover {
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.profile-menu-icons .menu-icon {
+    font-size: 20px;
+}
+
+.profile-menu-icons .account-icon {
+    font-size: 34px;
+}
+.selection{
+color: #a82b2b;
+font-size: 10px;
+font-weight: 500;
+}
+.header img {
+    height: 30px;
+    width: 80px;
+
+}
+
+.header-text {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 0 0 150px;
+}
+
+.header-text p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #f1f1f1;
+    cursor: pointer;
+    position: relative;
+}
+
+.header-text p.active {
+    color: white;
+
+}
+
+.header-text p.active::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: white;
+    position: absolute;
+    bottom: -5px;
+}
+
+.header-text p:hover {
+    color: #b4b4b4;
+}
+
+.header-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    height: 30px;
+}
+
+.header-search {
+    display: flex;
+    gap: 28px;
+    padding: 3px 50px;
+    border: 1px solid #f1f1f1;
+    border-radius: 50px;
+    align-items: center;
+    font-size: 14px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+.search-input {
+    display: flex;
+    align-items: center;
+}
+
+.header-bottom p {
+    color: black;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+input:focus {
+    outline: none;
+    border: none;
+}
+
+.search-input select, option {
+    width: 130px;
+    margin: 3px 0;
+    color: #6e6e6e;
+    border-radius: 6px;
+    height: 32px;
+    background-color: #ffffffd5;
+    border: none;
+    text-align: center; 
+}
+
+.search-button {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 50px;
+    color: rgba(0, 0, 0, 0.651);
+    padding: 16px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 15px;
+    font-size: 13px;
+}
+
+.search-checkin,
+.search-checkout,
+.search-who {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-where {
+    padding: 5px;
+    position: relative; 
+}
+
+
+.search-checkin::after,
+.search-checkout::after {
+    content: "";
+    position: absolute;
+    right: -10px;
+    top: 0;
+    height: 80%;
+    width: 1px;
+    background-color: rgb(235, 235, 235);
+}
+
+
+.search-where p {
+    color: #0f0f0f;
+    margin-top: -12px;
+    text-align: center; 
+}
+
+.date-picker {
+    background-color: #ffffff;
+    border: none; 
+    border-radius: 10px;
+    padding: 10px;
+    width: 150px;
+    transition: border-color 0.3s;
+}
+
+
+.date-picker::placeholder {
+    color: #464646;
+    padding: 0 45px;
+}
+
+.date-picker:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 119, 121, 0.5);
+}
+
+.search-who {
+    position: relative;
+    color: rgb(0, 0, 0);
+}
+.search-who p {
+    position: relative;
+    top: 6px;
+}
+.guest-popup {
+    position: absolute;
+    top: 30px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.search-icon {
+    background-color: #ff7779;
+    border-radius: 50%;
+    padding: 20px;
+    color: white;
+    border: none;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    margin-right: -40px;
+}
+
+.search-icon:hover {
+    background-color: #ff4444;
+}
+
+.guest-selector {
+    display: flex;
+    align-items: center;
+}
+
+.guest-button {
+    background-color: #ff7779;
+    color: #000000;
+    border: none;
+    padding: 5px 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    font-size: 18px;
+}
+
+.guest-button:hover {
+    background-color: #ff4444;
+}
+
+.guest-input {
+    width: 50px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+    margin: 0 5px;
+    color: #333;
+}
+
+.guest-input:focus {
+    outline: none;
+    border: 1px solid #ff7779;
+    box-shadow: 0 0 5px rgba(255, 119, 121, 0.5);
+}
+
+.header-search {
+    border-width: 1px 1px 2px 1px;
+    border-color: transparent transparent #f1f1f1 transparent;
+}
+
+.search-checkin,
+.search-checkout {
+    position: relative;
+}
+
+.search-checkin::after,
+.search-checkout::after {
+    content: "";
+    position: absolute;
+    right: -10px;
+    top: 0;
+    height: 80%;
+    width: 1px;
+    background-color: lightgray;
+}
+
+.search-checkout::after {
+    display: block; 
+}
+
+.search-checkin:hover::after,
+.search-checkout:hover::after {
+    background-color: #ff7779;
+}

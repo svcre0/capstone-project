@@ -1,0 +1,138 @@
+
+.question-container { 
+    position: relative;
+    text-align: center; /* Center align text */
+    height:60vh;
+
+}
+
+
+
+.question-image {
+    width: 90%; 
+    height: 540px; /* Maintain aspect ratio */
+    border-radius: 16px;
+ 
+}
+
+.question-title {
+    position: absolute;
+    top: 20%; /* Adjust as needed */
+    left: 9%;
+
+    color: white; /* Change text color for visibility */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.884); /* Add a shadow for better visibility */
+   
+    font-size:45px;
+}
+
+.question-button {
+    position: absolute;
+    top: 380px; /* Adjust as needed */
+    left: 215px;
+    transform: translate(-50%, -50%); /* Center the button */
+    background-color: #b1b1b1ec; /* Button color */
+    color: rgb(0, 0, 0); /* Button text color */
+    border: none;
+    padding: 10px 22px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+    font-weight: 700;
+}
+
+.question-button:hover {
+    background-color: #ff6b81; /* Change color on hover */
+}
+
+.inspiration-title {
+    margin: 55px 110px; /* Space above the title */
+    font-size: 28px; /* Adjust font size as needed */
+    text-align: left; /* Align text to the left */
+  
+}
+
+.destination-spans {
+    display: flex; /* Align spans in a row */
+    justify-content: center; /* Center align spans */
+    flex-wrap: wrap; /* Allow wrapping */
+    margin:40px 80px ; /* Space above and below */
+font-size: 13px;
+font-weight: 600;
+
+
+ border-bottom: 1px solid rgba(194, 193, 193, 0.733);  
+
+}
+
+.destination {
+
+   
+    margin: 5px 16px; /* Increase space between spans */
+    font-size: 15px; /* Adjust font size as needed */
+    position: relative; /* Positioning context for underline */
+    display: flex; /* Keep spans inline for hover effect */
+left: 25px;
+
+}
+
+
+.destination::after {
+    content: ''; /* Create an empty pseudo-element for the underline */
+    display: block; /* Allow it to occupy space */
+    width: 100%; /* Full width of the span */
+    height: 2px; /* Height of the underline */
+    background-color: transparent; /* Start as transparent */
+    position: absolute; /* Position it absolutely */
+    left: 0; /* Align to the left */
+    bottom: -5px; /* Position it below the text */
+    transition: background-color 0.3s, transform 0.3s; /* Transition for color and sliding effect */
+    transform: scaleX(0); /* Start with scaleX at 0 for hidden effect */
+}
+
+.destination:hover::after {
+    background-color: #FF5A5F; /* Airbnb color on hover */
+    transform: scaleX(1); /* Scale to full width on hover */
+}
+
+.footer {
+
+    display: flex;
+    justify-content: space-around; /* Distribute space evenly */
+    margin-top: 10px; /* Adjust as needed */
+  
+    background-color: #ffffff; /* Light background for footer */ 
+   
+}
+
+
+
+.attraction-container {
+    margin: 5px 40px; /* Space above and below the attraction container */
+}
+
+.attractions-row {
+    display: flex; /* Align attractions in a row */
+    justify-content: space-between; /* Space between attractions */
+    flex-wrap: wrap; /* Allow wrapping if necessary */
+}
+
+.attraction-item {
+    flex: 1 1 20%; /* Each attraction takes up 20% of the row, adjusting based on available space */
+    margin: 10px; /* Space between items */
+    text-align: center; /* Center text */
+ 
+}
+
+.attraction-title {
+    font-size: 14px; /* Adjust font size as needed */
+    cursor: pointer;
+   
+}
+
+.attraction-location {
+    font-size: 14px; /* Adjust font size as needed */
+    color: gray; /* Color for location text */
+    cursor: pointer;
+
+}

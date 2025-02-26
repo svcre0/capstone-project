@@ -1,0 +1,56 @@
+.container {
+    display: flex;               /* Enables Flexbox */
+    flex-wrap: wrap;            /* Allows cards to wrap to the next line */
+    justify-content: flex-start; /* Aligns cards to the left */
+    padding: 10px;              /* Optional: add padding around the container */
+}
+
+.card {
+    margin: 10px;               /* Margin between cards */
+    border-radius: 15px;        /* Rounded corners */
+    overflow: hidden;           /* Ensures content is contained */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: transform 150ms ease-in-out; /* Smooth transition on hover */
+    cursor: pointer;            /* Pointer cursor for interactivity */
+    background-color: #ffffff;  /* White background for a clean look */
+    flex: 1 1 calc(25% - 20px); /* Cards take up 25% of the width, adjusted for margins */
+    max-width: calc(25% - 20px); /* Prevents cards from exceeding this width */
+    box-sizing: border-box;     /* Include padding and border in the width */
+}
+
+.card:hover {
+    transform: scale(1.05);     /* Slightly scales up on hover */
+}
+
+.card > img {
+    object-fit: covers;          /* Cover to maintain aspect ratio */
+    height: 40px;              /* Fixed height for uniformity */
+    width: 70%;                /* Full width of the card */
+}
+
+.card-info {
+    padding: 20px;              /* Padding inside card info */
+    border-top: 1px solid #eee; /* Soft border for separation */
+}
+
+.card-info h2 {
+    font-size: 18px;            /* Increased font size for title */
+    font-weight: 700;           /* Bold title */
+    margin: 0;                  /* Remove default margin */
+    color: #333;                /* Darker color for readability */
+}
+
+.card-info > h4 {
+    font-size: 16px;            /* Increased font size for subtitle */
+    font-weight: 400;           /* Regular weight */
+    margin: 8px 0;              /* Spacing adjustments */
+    color: #666;                /* Softer color for description */
+}
+
+.card-info h3 {
+    font-size: 18px;            /* Standard size for price */
+    font-weight: 600;           /* Bold for emphasis */
+    color: #e63946;             /* Color for price emphasis */
+    margin-top: 10px;           /* Spacing for clarity */
+}
+
